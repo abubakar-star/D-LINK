@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="md.css" rel="stylesheet" />
+</head>
+<body>
+
+    <!-- The Modal -->
+<div class="md-outline" id="myMdl">
+
+<!-- Modal Header -->
+<div class="md-hd">
+    <h4 class="mdl-title">Book for Internet Installation</h4>
+  </div>
+
+  <!-- Modal body -->
+  <div class="modal-body">
+        
+    <form action="#">
+        <div class="form-group">
+          <label for="text">Name:</label><br>
+          <input type="text" class="form-control" placeholder="Enter your name" id="text">
+        </div>
+        <div class="form-group">
+          <label for="pwd">Phone Number:</label><br>
+          <input type="text" class="form-control" placeholder="Enter phone number" id="pwd">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Location:</label><br>
+            <select class="form-control v">
+                <option>Jua Kali</option>
+                <option>Lunga Lunga</option>
+                <option>Other</option>
+              </select>
+          </div>
+
+        <button type="submit" class="cls">Submit</button>
+        <button type="submit" onclick="buttonFunct()" class="clsw">Close</button>
+      </form>
+
+  </div>
+
+  </div>
+    <script type='text/javascript' src='md.js'></script>  
+</body>
+</html>

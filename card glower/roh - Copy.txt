@@ -1,0 +1,133 @@
+.mdl-out{
+  display: none;
+  position: fixed;  
+  top: 20%;
+  left: 29%;
+  border: 7px solid black;
+  width: 100%;
+  height: 200%;
+  margin-left: -400px;
+  margin-top: -130px;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.md-outline{   
+  border: 1px solid #ffffff22;
+  border-bottom: none;
+  background-color: #282c34;
+  background: linear-gradient(0deg, rgba(17,0,32,.5) 0%,rgba(40,44,52,1)  100%);
+  box-shadow: 0 7px 20px 5px #00000088;
+  height: 400px;
+  width: 40%;
+  margin-top: -550px;
+}
+
+.md-hd{
+  position: relative;  
+  border-bottom: 1px solid rgb(175, 170, 170);    
+  height: 11%;
+}
+
+
+
+.mdl-title{
+margin-top: 15px;
+text-align: center;
+font-size: 23px;
+}
+
+
+.form-group input{
+  width: 95%;
+  margin-top: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid rgb(175, 170, 170);
+}
+
+.form-group label{
+  font-size: 18px;
+}
+
+.form-group{
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.form-control{
+  width: 96%;
+  margin-top: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border: 1px solid rgb(175, 170, 170);
+  
+}
+
+.v{
+  cursor: pointer;
+}
+
+.cls{
+  margin-top: 20px;
+  margin-left: 20px;
+  padding: 7px 18px 7px 18px;
+  cursor: pointer;
+}
+
+.clsw{
+  margin-top: 20px;
+  margin-left: 337px;
+  padding: 7px 22px 7px 22px;
+  cursor: pointer;
+}
+
+
+
+
+
+    <!-- The Modal -->
+    <div class="mdl-out" id="mModl-out">
+    <div class="md-outline" id="myMdl">
+
+      <!-- Modal Header -->
+      <div class="md-hd">
+          <h4 class="mdl-title">Book for Internet Installation</h4>
+        </div>
+      
+        <!-- Modal body -->
+        <div class="modal-body">
+              
+          <form action="#">
+              <div class="form-group">
+                <label for="text">Name:</label><br>
+                <input type="text" class="form-control" placeholder="Enter your name" id="text">
+              </div>
+              <div class="form-group">
+                <label for="pwd">Phone Number:</label><br>
+                <input type="text" class="form-control" placeholder="Enter phone number" id="pwd">
+              </div>
+              <div class="form-group">
+                  <label for="pwd">Location:</label><br>
+                  <select class="form-control v">
+                      <option>Jua Kali</option>
+                      <option>Lunga Lunga</option>
+                      <option>Other</option>
+                    </select>
+                </div>
+      
+              <button type="submit" class="cls">Submit</button>
+              <button type="submit" onclick="buttonFunct()" class="clsw">Close</button>
+            </form>
+      
+        </div>
+      
+        </div>
+      </div>
+  
